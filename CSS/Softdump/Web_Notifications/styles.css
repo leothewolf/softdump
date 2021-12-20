@@ -1,0 +1,122 @@
+/* Notification */
+.notification {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+/* Cookie */
+.cookie-not {
+  width: 250px;
+  box-sizing: border-box;
+  padding: 10px;
+  box-shadow: 0 2px 10px 0 rgba(21, 24, 28, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+  background: #fff;
+  margin: 10px;
+  margin-top: 30px;
+}
+
+.cookie-not img {
+  position: relative;
+  top: -35px;
+}
+
+.cookie-not span {
+  text-align: center;
+  margin-top: -20px;
+}
+
+.cookie-not span a {
+  color: black;
+}
+
+.cookie-btn {
+  height: 30px;
+  width: 60px;
+  color: white;
+  background-color: #3bc4ce;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+}
+
+/* newsletter */
+
+.newsletter-not {
+  width: 300px;
+  box-sizing: border-box;
+  padding: 10px;
+  box-shadow: 0 2px 10px 0 rgba(21, 24, 28, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+  background: #fff;
+  margin: 10px;
+}
+
+.newsletter-not input[type="text"] {
+  height: 30px;
+  padding-left: 5px;
+}
+
+.newsletter-not input[type="submit"] {
+  height: 30px;
+  width: 70px;
+  padding-left: 5px;
+  background: rgb(47, 233, 103);
+  border: none;
+  color: black;
+  font-weight: bolder;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.newsletter-not i {
+  display: block;
+  margin-left: auto;
+}
+
+/* Feedback */
+
+.feedback-not {
+  width: 250px;
+  box-sizing: border-box;
+  padding: 10px;
+  box-shadow: 0 2px 10px 0 rgba(21, 24, 28, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+  background: #fff;
+  margin: 10px;
+}
+.feed-btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.feed-btn span img {
+  width: 35px;
+  margin-right: 7px;
+}
+
+.feedback-not i {
+  display: block;
+  margin-left: auto;
+}
+
+/* Hide div */
+
+.hide {
+  display: none;
+}

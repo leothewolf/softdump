@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <div class="sidebar active" style="overflow-y: none;overflow-x: scroll;">
+        <span class="heading">
+            Company Name
+        </span>
+        <a href="#" class="subheading" >Label</a>
+        <a href="#" class="subheading" >Label</a>
+        <a href="#" class="subheading" >Label</a>
+        <span href="#" class="subheading" id="dropdownmen"><div class="droplab">Label<i class="fas fa-sort-down" style="margin-left: 5px;"></i></div>
+        <div class="clickdropdown active">
+            <ul>
+                <li>First</li>
+                <li>First</li>
+                <li>First</li>
+                <li>First</li>
+            </ul>
+        </div>
+        </span>
+    </div>
+    <div class="main">
+        <i class="fas fa-bars" style="font-size: 25px;margin:10px;cursor: pointer;" id="sidebari"></i>
+    </div>
+
+    <script>
+        var sideBar = document.querySelector('.sidebar');
+        var sideBari = document.querySelector('#sidebari');
+        var dropDownmen = document.querySelector('#dropdownmen');
+        var clickDropdown = document.querySelector('.clickdropdown');
+        var dropLab = document.querySelector('.droplab');
+        
+        sideBari.onclick = function () {
+            if(sideBar.classList.contains('active')){
+                sideBar.classList.remove('active');
+            }else{
+                sideBar.classList.add('active');
+            }
+        }
+
+        dropDownmen.onclick = function (){
+            if(clickDropdown.classList.contains('active')){
+                clickDropdown.classList.remove('active');
+                dropDownmen.classList.add('active');
+                dropDownmen.style.paddingTop = '20px';
+                dropDownmen.style.background = '#333';
+                dropDownmen.style.color = '#fff';
+                dropLab.innerHTML = 'Label<i class="fas fa-sort-up" style="margin-left: 5px;margin-top:8px;"></i>';
+                dropDownmen.onmouseout = function(){}
+                dropDownmen.onmouseover = function(){}
+            }else{
+                clickDropdown.classList.add('active');
+                dropDownmen.classList.remove('active');
+                dropDownmen.style.paddingTop = '10px';
+                dropDownmen.onmouseout = function(){
+                    dropDownmen.style.background = '#222';
+                    dropDownmen.style.color = '#fff'; 
+                }
+                dropDownmen.onmouseover = function(){
+                    dropDownmen.style.background = '#fff';
+                    dropDownmen.style.color = '#333'; 
+                }
+                dropLab.innerHTML = 'Label<i class="fas fa-sort-down" style="margin-left: 5px;"></i>';
+            }  
+        }
+
+        window.addEventListener("resize", function() {
+            if(clickDropdown.classList.contains('active')){
+                if (window.innerWidth < 918) sideBar.classList.remove("active");
+            }
+        });
+
+        window.addEventListener("resize", function() {
+                if (window.innerWidth > 918) sideBar.classList.add("active");
+        });
+    </script>
+</body>
+</html>

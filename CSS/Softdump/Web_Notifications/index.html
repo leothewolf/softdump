@@ -1,0 +1,92 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing things</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <div class="notification"> 
+
+        <div class="feedback-not hide">
+            <i class="far fa-times-circle" id="feed-exit"></i>
+            <span style="font-size: 25px;font-family: sans-serif;font-weight: 600;margin-bottom: 5px;">Rate us!</span>
+            <div class="feed-btn">
+                <span class="feed-exp1"><img src="./img/1.png" alt="" draggable="false"></span>
+                <span class="feed-exp2"><img src="./img/2.png" alt="" draggable="false"></span>
+                <span class="feed-exp3"><img src="./img/3.png" alt="" draggable="false"></span>
+                <span class="feed-exp4" style="margin-right: 0px;"><img src="./img/4.png" alt="" draggable="false"></span>
+            </div>
+        </div>
+
+        <div class="newsletter-not hide">
+            <i class="far fa-times-circle" id="news-exit"></i>
+            <span style="font-size: 25px;font-family: sans-serif;font-weight: 600;">Sign Up</span>
+            <span style="font-size: 15px;font-family: sans-serif;text-align: center;margin-top: 8px;margin-bottom:20px ;">
+                We do not send out spam emails & you can unsubscribe at any point
+            </span>
+            <form action="#" method="post" onsubmit="return false;">
+                <input type="text" placeholder="Email Address">
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+
+        <div class="cookie-not hide">
+            <img src="./img/cookie.svg" alt="" draggable="false">
+            <span>
+                We use cookies to give you the best experience. Learn more in our <a href="">Privacy</a> & <a href="">Terms of service</a>.
+            </span>
+            <br>
+            <button class="cookie-btn">Got it</button>
+        </div>
+
+    </div>
+
+    <script>
+        var cookieBtn = document.querySelector('.cookie-btn');
+        var cookieNot = document.querySelector('.cookie-not');
+        var newsletterNot = document.querySelector('.newsletter-not');
+        var newsExit = document.querySelector('#news-exit');
+        var feedbackNot = document.querySelector('.feedback-not');
+        var feedExit = document.querySelector('#feed-exit');
+        var feedBtn = document.querySelector('.feed-btn');
+        
+
+        cookieBtn.onclick = function(){
+            cookieNot.classList.add('hide');
+        }
+
+        newsExit.onclick = function(){
+            newsletterNot.classList.add('hide');
+        }
+
+        feedExit.onclick = function(){
+            feedbackNot.classList.add('hide');  
+        }
+
+        setTimeout(function(){
+            cookieNot.classList.remove('hide');
+        }, 700);
+
+        setTimeout(function(){
+            newsletterNot.classList.remove('hide');
+        }, 700);
+
+        setTimeout(function(){
+            feedbackNot.classList.remove('hide');
+        }, 700);
+
+        var elements = ['.feed-exp1', '.feed-exp2', '.feed-exp3', '.feed-exp4'];
+            for(i = 0; i < elements.length; i++) {
+                document.querySelector(elements[i]).onclick = function(){
+                    feedBtn.innerHTML = '<span style="font-size: 20px;text-align: center;font-family: sans-serif;">Thanks for the review</span>';  
+                    setTimeout(function(){
+                    feedbackNot.classList.add('hide');
+                    }, 700);
+                }
+            }
+    </script>
+</body>
+</html>

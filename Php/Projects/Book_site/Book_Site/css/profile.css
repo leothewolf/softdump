@@ -1,0 +1,123 @@
+.profile {
+  background: #d9e7fc;
+  height: 92%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profilemain {
+  background: white;
+  padding: 20px 0;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  flex-direction: column;
+}
+
+.profilemain img {
+  width: 100px;
+  margin-top: 20px;
+}
+
+.profilemain .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  font-size: 25px;
+  text-align: center;
+}
+
+.profilemain .info span {
+  margin-bottom: 15px;
+}
+
+.pfpbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pfpbtn button,
+#submit {
+  height: 40px;
+  width: 150px;
+  background: #0069d9;
+  border: 1px solid #0062cc;
+  color: white;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+}
+
+.pfpbtn button:hover {
+  background: #005dc0;
+}
+
+#username,
+#email,
+#opassword,
+#npassword,
+#cnpassword,
+#password {
+  height: 35px;
+  width: 300px;
+  box-sizing: border-box;
+  padding-left: 8px;
+  font-family: sans-serif;
+}
+
+.err {
+  width: 300px;
+  border-radius: 0.25rem;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 10px;
+  letter-spacing: 1px;
+  padding: 6px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.errt {
+  width: 300px;
+  border-radius: 0.25rem;
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  font-size: 1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding-left: 10px;
+  letter-spacing: 1px;
+  padding: 6px;
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.delAcc,
+#permdela {
+  height: 40px;
+  width: 300px;
+  background: #da2b3c;
+  border: 1px solid #da2b3c;
+  color: white;
+  font-size: 1rem;
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}

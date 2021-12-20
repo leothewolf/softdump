@@ -1,0 +1,106 @@
+:root {
+  --height: 100px;
+  --width: 500px;
+}
+
+body {
+  margin: 20px;
+  padding: 0;
+  background: indianred;
+  text-align: center;
+}
+.main {
+  height: 250px;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: end;
+  box-sizing: border-box;
+}
+
+.main2 {
+  height: 250px;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: start;
+  box-sizing: border-box;
+}
+
+.childdivleft {
+  height: 200px;
+  width: 200px;
+  background: wheat;
+  position: relative;
+  top: -125px;
+  left: -300px;
+}
+
+.childdivright {
+  height: 200px;
+  width: 200px;
+  background: wheat;
+  position: relative;
+  top: -125px;
+  left: 575px;
+}
+
+.first {
+  padding: 25px;
+  height: var(--height);
+  width: var(--width);
+  background: wheat;
+  box-sizing: border-box;
+}
+
+.second {
+  padding: 25px;
+  height: var(--height);
+  width: var(--width);
+  background: wheat;
+  box-sizing: border-box;
+}
+
+.spacing {
+  height: -100px;
+  width: 100%;
+}
+
+/* .second {
+  padding: 20px;
+  height: var(--height);
+  width: var(--width);
+  background: wheat;
+  box-sizing: border-box;
+}
+
+
+
+.four {
+  padding: 20px;
+  height: var(--height);
+  width: var(--width);
+  background: wheat;
+  box-sizing: border-box;
+}
+
+.six {
+  padding: 20px;
+  height: var(--height);
+  width: var(--width);
+  background: wheat;
+  box-sizing: border-box;
+}
+
+.seven {
+  padding: 20px;
+  height: var(--height);
+  width: var(--width);
+  background: wheat;
+  box-sizing: border-box;
+}
+
+.spacing {
+  height: 20px;
+  width: 100%;
+} */

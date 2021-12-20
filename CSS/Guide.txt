@@ -1,0 +1,15 @@
+16px=1em
+google fonts
+
+=text-decoration
+-removing underline under hyperink: text-decorate= none;
+-adding line above any text : text-decorate :overline;
+-adding line below any text : text-decorate :underline;
+-adding line through any text : text-decorate :line-through;
+
+For merging two contents 0 their margin-top/margin-bottom
+
+float--clear
+
+<script src="https://kit.fontawesome.com/eeb1ed7407.js" crossorigin="anonymous"></script>
+

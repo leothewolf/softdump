@@ -1,0 +1,292 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: x-large;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.logo {
+  position: absolute;
+  font-size: 30px;
+  top: 17px;
+  left: 20px;
+  border: 1px solid white;
+  border-radius: 40px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannerimg {
+  width: 100vw;
+  background-attachment: fixed;
+}
+
+.logo a {
+  text-decoration: none;
+  color: white;
+  border: black;
+}
+
+.bannertext {
+  text-align: center;
+  padding: 20px;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  position: absolute;
+  /* font-size: 3.5em; */
+  text-shadow: 3px 5px 13px rgba(0, 0, 0, 1);
+}
+
+.bannerheading {
+  font-size: 3.5em;
+}
+
+.bannnercontent {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 35px;
+  height: 5px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: white;
+  box-sizing: border-box;
+  text-shadow: 3px 5px 13px rgba(0, 0, 0, 1);
+}
+
+.header .li a {
+  text-decoration: none;
+  color: white;
+}
+
+.productheading {
+  height: 50px;
+  width: 260px;
+  color: white;
+  position: relative;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 2em;
+  padding: 10px;
+  margin-left: 39.5%;
+  font-weight: bold;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+  top: 20px;
+}
+
+.productheadingborder {
+  height: 70px;
+  width: 300px;
+  border: 1px solid white;
+  position: absolute;
+  border-radius: 100px;
+  left: 523px;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: url("/img/mainbanner.jpg");
+  background-attachment: fixed;
+}
+
+.rightcard {
+  padding: 40px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.leftcard {
+  padding: 40px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.card {
+  height: 350px;
+  width: 250px;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.inforight {
+  position: absolute;
+  display: flex;
+  padding: 60px;
+}
+
+.infoleft {
+  position: absolute;
+  display: flex;
+  padding: 65px;
+  right: 25px;
+}
+
+.info {
+  height: 300px;
+  width: 900px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: url("/img/productinfoimg.png");
+}
+
+.button {
+  position: absolute;
+  bottom: 90px;
+  right: 85px;
+}
+
+.addtocart {
+  background-color: black;
+  color: white;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 7px;
+  text-decoration: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.buynow {
+  margin: 10px;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  padding: 7px;
+  border-radius: 10px;
+  text-decoration: none;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.addtocart img {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  top: 7px;
+}
+
+.socialbutton {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  overflow: hidden;
+}
+
+.aboutus {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  color: white;
+  box-sizing: border-box;
+  background: url("/img/banner.png");
+  background-attachment: fixed;
+  text-shadow: 3px 5px 13px rgba(0, 0, 0, 1);
+}
+
+.aboutus p {
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.aboutus video {
+  position: relative;
+  left: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contactus {
+  background: url("/img/mainbanner.jpg");
+  display: flexbox;
+  justify-items: center;
+  align-content: center;
+  width: 100vw;
+  height: 50vh;
+  color: black;
+  box-sizing: border-box;
+  text-align: center;
+  text-shadow: 1px 0.5px 13px rgba(0, 0, 0, 1);
+  background-attachment: fixed;
+}
+
+.contactuscontent {
+  padding-top: 18px;
+  width: 1250px;
+  height: 280px;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: relative;
+  top: 5%;
+  left: 3.5%;
+  box-sizing: border-box;
+  background: url("/img/productinfoimg.png");
+}
+
+.contactus span {
+  font-size: 2.3em;
+  text-shadow: 0;
+}
+
+.content {
+  background: url("/img/mainbanner.jpg");
+  background-attachment: fixed;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  width: 100vw;
+  height: 5vh;
+  background: black;
+  text-align: center;
+  color: white;
+}
+
+.a:hover {
+  color: greenyellow;
+}

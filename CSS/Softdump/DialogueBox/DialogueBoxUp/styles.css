@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --jb7: 0, 0, 0;
+}
+
+.pfp {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+.pfpicon {
+  height: 50px;
+  width: 50px;
+  background: wheat;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pfpbox {
+  height: auto;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 1px rgba(var(--jb7, 0, 0, 0), 0.0975);
+  background: white;
+  display: none;
+  padding: 5px 0;
+}
+
+.pfpbox.active {
+  display: initial;
+}
+
+.pfpboxar {
+  height: 15px;
+  width: 15px;
+  box-shadow: 0 0 5px 1px rgba(var(--jb7, 0, 0, 0), 0.0975);
+  transform: rotateZ(45deg);
+  margin-top: 88px;
+  z-index: -1;
+  display: none;
+}
+
+.pfpboxar1 {
+  height: 15px;
+  width: 15px;
+  background: white;
+  transform: rotateZ(45deg);
+  position: absolute;
+  margin-top: 88px;
+  display: none;
+}
+
+.pfpboxar1.active {
+  display: initial;
+}
+
+.pfpboxar.active {
+  display: initial;
+}
+
+.pfpspan {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

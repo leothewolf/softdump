@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<?php
+
+$weather = array("Rain","Sunshine","clouds","Hail","Sleet","Snow","Wind");
+
+echo "We have seen all kinds of weather this month. <br> At the beginning of the month we had " ."$weather[5]"." and "."$weather[6]".
+".<br> Then came " ."$weather[1]" ." with few " ."$weather[2]" ." and some " ."$weather[0]".".<br> At least we didnt get any " ."$weather[3]" ." or ". "$weather[4]";
+
+?>
+</body>
+</html>

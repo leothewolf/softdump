@@ -1,0 +1,93 @@
+<!DOCTYPE html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <div class="login-main">
+        <div class="login">
+            <div class="login-wel">
+                <span class="log-heading">Welcome Back</span>
+                <p style="padding: 30px;box-sizing: border-box;text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, accusamus excepturi assumenda hic ullam, voluptatem magnam sint minus, suscipit reprehenderit ipsam. Quasi rem cum assumenda voluptatem magnam enim, soluta ipsum?</p>
+                <div class="login-btns">
+                <button><img src="/icons/search.png" alt="">Sign in with Google</button> 
+                <button><img src="/icons/facebook.png" alt="">Sign in with Facebook</button> 
+                <button><img src="/icons/twitter.png" alt="">Sign in with Twitter</button> 
+                <button class="email-signin" onclick="emailLogin()"><img src="/icons/mail.png" alt="">Sign in with Email</button> 
+                </div>
+                <br>
+                <p class="nacb">No account? <span class="register-nav" onclick="registerAcc()">Create one</span></p>
+                <br>
+                <p style="padding: 30px;box-sizing: border-box;text-align: center;font-size: 15px;color: #333;">Click “Sign In” to agree to Company’s <a href="#" style="color: black;">Terms of Service</a> and acknowledge that Company’s <a href="#" style="color: black;">Privacy Policy</a>applies to you.</p>
+            </div>
+            <!-- <div class="login-form">
+                <span class="log-heading" style="font-size: 33px;cursor: pointer;">Login using email</span>
+                <br>
+                <br>
+                <form action="" method="post">
+                    <input type="text" name="username" id="username" placeholder="USERNAME">
+                    <br>
+                    <br>
+                    <input type="password" name="password" id="password" placeholder="PASSWORD">
+                    <br>
+                    <br>
+                    <input type="submit" value="SUBMIT" style="background: black;color: #fff;">
+                </form>
+                <br>
+                <br>
+                <p class="login-welv" style="cursor: pointer;">&lt; Check other options</p>
+            </div> -->
+            <!-- <div class="register-form">
+                <span class="log-heading" style="font-size: 33px;cursor: pointer;">Register</span>
+                <br>
+                <br>
+                <form action="" method="post">
+                    <input type="text" name="username" id="username" placeholder="USERNAME">
+                    <br>
+                    <br>
+                    <input type="email" name="email" id="email" placeholder="EMAIL">
+                    <br>
+                    <br>
+                    <input type="password" name="password" id="password" placeholder="PASSWORD">
+                    <br>
+                    <br>
+                    <input type="cpassword" name="cpassword" id="password" placeholder="CONFIRM PASSWORD">
+                    <br>
+                    <br>
+                    <input type="submit" value="SUBMIT" style="background: black;color: #fff;">
+                </form>
+                <br>
+                <br>
+                <p class="nacb">Already have an account? <span class="login-nav">Login</span></p>
+            </div> -->
+        </div>
+    </div>
+    <script>
+        var login = document.querySelector('.login');
+        var loginWel = document.querySelector('.login-wel');
+        var loginForm = document.querySelector('.login-form');
+        var emailsignIn = document.querySelector('.email-signin');
+        var backLogin = document.querySelector('.login-welv');
+        var regsiterForm = document.querySelector('.register-form');
+        var loginNav = document.querySelector('.login-nav');
+        var registerNav = document.querySelector('.register-nav');
+
+        function registerAcc(){
+            login.innerHTML = '<div class="register-form"><span class="log-heading" style="font-size: 33px;cursor: pointer;">Register</span><br><br><form action="" method="post"><input type="text" name="username" id="username" placeholder="USERNAME"><br><br><input type="email" name="email" id="email" placeholder="EMAIL"><br><br><input type="password" name="password" id="password" placeholder="PASSWORD"><br><br><input type="cpassword" name="cpassword" id="password" placeholder="CONFIRM PASSWORD"><br><br><input type="submit" value="SUBMIT" style="background: black;color: #fff;"></form><br><br><p class="nacb">Already have an account? <span class="login-nav" onclick="loginAcc()">Login</span></p></div>'; 
+        }
+
+        function loginAcc(){
+            login.innerHTML = '<div class="login-wel"><span class="log-heading">Welcome Back</span><p style="padding: 30px;box-sizing: border-box;text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, accusamus excepturi assumenda hic ullam, voluptatem magnam sint minus, suscipit reprehenderit ipsam. Quasi rem cum assumenda voluptatem magnam enim, soluta ipsum?</p><div class="login-btns"><button><img src="/icons/search.png" alt="">Sign in with Google</button> <button><img src="/icons/facebook.png" alt="">Sign in with Facebook</button> <button><img src="/icons/twitter.png" alt="">Sign in with Twitter</button> <button class="email-signin" onclick="emailLogin()"><img src="/icons/mail.png" alt="">Sign in with Email</button> </div><br><p class="nacb">No account? <span class="register-nav" onclick="registerAcc()">Create one</span></p><br><p style="padding: 30px;box-sizing: border-box;text-align: center;font-size: 15px;color: #333;">Click “Sign In” to agree to Company’s <a href="#" style="color: black;">Terms of Service</a> and acknowledge that Company’s <a href="#" style="color: black;">Privacy Policy</a>applies to you.</p></div>';  
+        }
+
+        function emailLogin(){
+            login.innerHTML = '<div class="login-form"><span class="log-heading" style="font-size: 33px;cursor: pointer;">Login using email</span><br><br><form action="" method="post"><input type="text" name="username" id="username" placeholder="USERNAME"><br><br><input type="password" name="password" id="password" placeholder="PASSWORD"><br><br><input type="submit" value="SUBMIT" style="background: black;color: #fff;"></form><br><br><p class="login-welv" style="cursor: pointer;" onclick="loginAcc()">&lt; Check other options</p></div>'; 
+        }
+
+    </script>
+</body>
+</html>

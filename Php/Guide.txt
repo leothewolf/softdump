@@ -1,0 +1,133 @@
+==Strings
+=strtoupper()---to convert string to uppercase
+=strtolower()---to convert string to lowercase
+=strlen()---to know string length
+=echo $stringname[1]---To display 1st character 
+      "Abc"[1] output:b
+=str_replace---string replace
+ Format : echo str_replace ("String to replace","What to replace with",$stringname)
+=substr---to show what string would be rendered
+ Format : echo substr($stringname , index_to_render_from , how_many_characters);
+ Example : echo subtr($example , 8 ,3)
+=abs($name)---to render positive output even if input==negative
+=pow(base_number , raise_to_power)---squaring number
+=sqrt(number)---square-rooting  number
+=echo max(number1 , number2)---maximum number
+=echo min(number1 , number2)---minimum number
+=echo round(number)---for rounding off number
+=echo floor(number)---for rendering integral number no matter what extra decimal is
+
+==Arrays
+=Format: $string = array("","","")
+=Accesing element = $string[index]
+=Modifiying element = $string[index of the element to be changed] = modified_element
+=Counting total elements in array = count($string)
+
+==Creating class
+=Format : class Name{
+                 var $firstvariable;   
+                 var $secondvariable; 
+                 var $thirdvariable; 
+
+                 function __construct(){
+ }              
+}
+
+Example:
+class Book{
+                 var $title;   
+                 var $author; 
+                 var $pages; 
+
+                 function __construct(){
+ }              
+}
+
+$book1 = new Book();
+$book1->title = "Harry potter";
+$book1->author = "JK Rowling";
+$book1->pages = "400";
+
+Instead of this another format==
+
+=Format : class Name{
+              var $title;   
+              var $author; 
+              var $pages;
+
+              function __construct($aTitle,$aAuthor,$aPages){
+$this->title = $aTitle
+$this->author = $aAuthor
+$this->pages = $aPages
+                   
+ }              
+}
+
+$book1 = newBook("Harry Potter","JK Rowling","400")
+
+==while loop
+Explain with example : <?php
+
+			$x=1;
+
+			while($x<=10){
+    			echo $x . '<br>';
+    			$x++;
+			}
+
+			?>
+
+==do-while loop
+Explain with example :<?php
+
+			$x=1;
+
+			do{
+    			echo $x . '<br>';
+    			$x++;
+			}while($x<=10)
+
+			?>
+
+==for loop
+Explain with example : <?php
+
+			for($x=1;$x<=10;$x++){
+    			echo $x . '<br>';
+			}
+
+			?>
+
+==for each loop(can be used to print out array)
+Explain with example : <?php
+
+			$names=array("John","Michael","David");
+			foreach ($names as $key){
+        			echo $key . '<br>';
+			}
+
+			?>
+
+==Using foreach loop for printing out associative array:
+Explain with example : <?php
+
+			$names=array("name"=>"owaish","age"=>"16","gender"=>"male");
+			foreach ($names as $key => $value){
+        		echo $key . $value . '<br>';
+			}
+
+			?>
+
+==Extra definations : Camel case : Every First Word Capital
+		      Lower case : every word lowercase
+		      Pascal Case : EVERY WORD CAPITAL
+
+==Functions:
+Creating a function: <?php
+		     function functionname(){
+		     $x=5;
+		     echo $x;
+		     }
+		     myfunction();
+		     ?>
+-variables defined in function can't be used outside function

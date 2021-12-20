@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="count" style="text-align: center;font-size: 30px;"></div>
+        <br>
+        <div class="btn">
+            <button class="dec">Dec</button>
+            <button class="reset">Reset</button>
+            <button class="inc">Inc</button>
+        </div>
+    </div>
+
+    <script>
+        var count = 0;
+        var body = document.querySelector('body');
+        var divCount = document.querySelector('.count');
+        var decCount = document.querySelector('.dec');
+        var incCount = document.querySelector('.inc');
+        var resetCount = document.querySelector('.reset');
+
+        divCount.innerHTML = count;
+        decCount.onclick = function(){
+            count--;
+            divCount.innerHTML = count;
+            body.style.background = 'rgb(241, 49, 49, 0.7)';
+        }
+        incCount.onclick = function(){
+            count++;
+            divCount.innerHTML = count;
+            body.style.background = 'rgb(43, 236, 75, 0.6)';
+        }
+        resetCount.onclick = function(){
+            count = 0;
+            divCount.innerHTML = count;
+            body.style.background = '#eeeeee';
+        }
+    </script>
+</body>
+</html>

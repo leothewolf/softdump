@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #181818;
+}
+
+.main-logo {
+  width: 500px;
+  height: 500px;
+  box-shadow: 16px 14px 20px #0000008c;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-logo::before {
+  content: "";
+  background-image: conic-gradient(#ff0052 20deg, transparent 120deg);
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  animation: anim 3s linear infinite;
+}
+
+@keyframes anim {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+.main-logo::after {
+  content: "Lets do it!!";
+  background-color: #101010;
+  width: 490px;
+  height: 490px;
+  position: absolute;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff0052;
+  font-size: 40px;
+  letter-spacing: 5px;
+  box-shadow: inset 20px 20px 20px #0000008c;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 50px;
+}

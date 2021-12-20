@@ -1,0 +1,23 @@
+body {
+  background: black;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8em;
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: white;
+  overflow: hidden;
+}
+
+.image {
+  position: absolute;
+  z-index: 2;
+}
+
+.backblack {
+  position: absolute;
+  z-index: 1;
+}

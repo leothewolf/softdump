@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <div class="pfp">
+        <div class="pfpicon">
+            <div class="pfpboxar"></div>
+            <div class="pfpboxar1"></div>
+        </div>
+        <div class="pfpbox">
+            <span class="pfpspan"><i class="fas fa-icons" style="margin-right: 5px;"></i>Label</span>
+            <span class="pfpspan"><i class="fas fa-icons" style="margin-right: 5px;"></i>Label</span>
+            <span class="pfpspan"><i class="fas fa-icons" style="margin-right: 5px;"></i>Label</span>
+            <span class="pfpspan" style="border-top: 1px solid #333;"><i class="fas fa-sign-out-alt" style="margin-right: 5px;"></i>Logout</span>
+
+        </div>
+    </div>
+    <script>
+        const pfpBoxar = document.querySelector(".pfpboxar");
+        const pfpBoxar1 = document.querySelector(".pfpboxar1");
+        const pfpBox = document.querySelector(".pfpbox");
+        const pfpIcon = document.querySelector(".pfpicon");
+        
+        pfpIcon.onclick = function () {
+            if(pfpBox.classList.contains('active')){
+                pfpBox.classList.remove("active");
+                pfpBoxar.classList.remove("active");
+                pfpBoxar1.classList.remove("active");
+            }else{
+                pfpBox.classList.add("active");
+                pfpBoxar.classList.add("active");
+                pfpBoxar1.classList.add("active");
+            }
+        }
+        </script>
+</body>
+</html>

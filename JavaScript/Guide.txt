@@ -1,0 +1,111 @@
+document.write("");---for using html in java
+example:document.write("<h1>Hello World</h1>");
+
+alert("This is an alert");---This displays a top-popup box with the text on page load
+
+==Strings
+var greeting = "hello";
+document.write( greeting.length + "<br>");---will display the length of the string
+document.write( greeting.charAt(0) + "<br>");---will display value at index 0
+document.write( greeting.indexof("llo") + "<br>");---will display index of start of string
+document.write( greeting.indexof("z") + "<br>");---will display -1 as z is not in string
+document.write( greeting.substring(2) + "<br>");---will display string from index 2
+document.write( greeting.substring(1,3) + "<br>");---will display string from 1 to 2
+
+==Number Operations
++ ---for addition
+- ---for multiplication
+** ---for squaring 
+% ---for displaying remainder
+/ ---for division
+* ---for multiplication 
++= ---for increment by the value after +=
+++ ---for increment by 1
+
+==Math class
+document.write(Math.pow(2,3) + "<br>");---power maths function
+document.write(Math.sqrt(144) + "<br>");---sqrt maths function
+document.write(Math.round(2.7) + "<br>");---for rounding off number
+
+==For alert input
+var name = window.prompt("Enter your name: ");
+alert("Your name is" + name);
+
+var header = document.getElementById("abc");---for getting id
+header.style="background: blue;"---for styling 
+header.innerHTML = "Hi";---for grabbing info inside header
+
+==arrays can be created in javascript
+= var array1 = [0 , 1, 2}
+  document.write(array1[0] + "<br>");
+
+==nested arrays can be formed in javascript
+= var array2 = [ [0,1] , [2,3] ];
+  document.write(array2[0][1] + "<br>");
+
+==Array functions
+
+var friend = new Array();---Creating array(another way)
+friends.push("Oscar");
+friends.push("Kevin");
+friends.push("Angela");
+
+friends.pop();---deleting last element from array
+document.write(friends + "<br>");---printing out full array
+document.write(friends.indexOf("Angela") + "<br>");---printing out index of an element in array
+document.write(friends.reverse() + "<br>");---reversing array
+document.write(friends.sort() + "<br>");---alphabetical sort
+
+Objects in java==associative array in php
+Explain with example:
+	var student = {
+		name:"Jim";
+		major:"Buisness";
+		age:19;
+		gpa:9.5;
+	}
+document.write(student.name + "<br>");---for printing out particular element from the var
+
+==Functions in javascript
+ 
+Explain with example:
+function addNumber(num1 , num2){
+	return num1 + num2;
+}
+
+Eventhandlers: https://www.w3schools.com/jsref/dom_obj_event.asp
+
+=Webpage load event
+window.onload = function(){
+    console.log('Document was loaded ');
+}
+
+=Mouseclick-release events
+Explain with example:
+firstcontainer.addEventListener('mouseup',function(){
+    firstcontainer.style.background = "black";
+})
+
+firstcontainer.addEventListener('mousedown',function(){
+    firstcontainer.style.background = "red";
+})
+
+=Another way of defining function:
+ancfun = (a,b)=>{
+	return a+b;
+}
+
+anotherfun = () =>{
+	console.log("Hey")
+}
+
+=Timeout  function----for delaying a function
+Explain with example: setTimeout(anotherfun, 2000);
+Format:
+	setTimeout(function_name, by what time to delay in milliseconds);
+
+
+Changes on window resize:
+window.addEventListener("resize", function() {
+     if (window.innerWidth > 918) sideBar.classList.add("active");
+});

@@ -1,0 +1,83 @@
+npm install -g create-react-app
+create-react-app reactproject1
+
+------------------------------------
+Important Points: 
+
+•functions in java script are called using <function-name />
+•when we create a function we need to return a value even if its null or the website will show error
+•in an function there should be only one element if we have multiple divs we need to enclose those div in a main div
+
+------------------------------------
+
+Dependencies:
+=import react from "react"; --- for using reactjs in javascript
+=import ReactDom from "react-dom"; --- for dom manipulation
+
+------------------------------------
+
+==specifing props type:
+=emmet for importing: impt {This will render: import PropTypes from 'prop-types'}
+=Filename.propTypes = {
+	propname : PropTypes.specifytype;
+}
+-Example:
+Header.propTypes = {
+	title : PropTypes.string,
+	searchBar: Proptypes.bool
+}
+
+------------------------------------
+
+Declaring props/Default props=
+Format= Filename.defaultProps = {
+	propname: "To display text"
+}
+
+Example: Header.defaultProps = {
+	title: "Your title here",
+	searchBar: true
+}
+
+•This is mainly used so if user doesnt specify any prop the default is rendered.
+•Use commas to seperate the default types 
+•To make props required and user to enter it dont specify the default prop and add .required at end of proptype 
+
+------------------------------------
+
+=For loop
+{props.todos.map((todo) => {
+        return (
+          <TodoItem todo={todo} key={todo.sno} onDelete={props.onDelete} />
+        );
+})}
+
+------------------------------------
+
+Simple react js to print a heading/creating function and then injecting it in html
+
+import React from 'react' //importing react dependency
+import ReactDom from 'react-dom' //importing ReactDom dependency
+
+function Greeting(){        //creating a function
+  return <h4>hey there</h4>
+}
+
+ReactDom.render(<Greeting/>,document.getElementById('root')); //rendering function greeting in dom element <div class="root">
+
+Steps:
+-First we import dependency react so to use react
+-Then we make a function greeting which returns heading-type-4 having string "hello world"
+-We import dependency reactdom so to make changes in main dom / main html file
+-Then we use reactdom.render to render the function greeting in a div
+
+------------------------------------
+
+=const function
+
+Example:
+const Greeting =() =>{
+	return React.createElement('h1',{},'hello world')
+};
+
+------------------------------------

@@ -1,0 +1,124 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header></header>
+    <div class="main">
+        <div class="editing">
+            <h2>Design a notification:</h2>
+            <br>
+            <hr>
+            <br>
+            <h3>Measure:</h3>
+            <br>
+            <form name="subForm" action="">
+                <label for="height">Height:</label>
+                <input type="text" name="height" id="height">
+                <label for="width" style="margin-left: 20px;">Width:</label>
+                <input type="text" name="width" id="width">
+                <label for="margin" style="margin-left: 20px;">Margin(Default: 10px): </label>
+                <input type="text" name="margin" id="margin">
+            </form>
+            <br>
+            <br>
+            <h3>Position:</h3>
+            <br>
+            <div class="posBtn">
+                <button class="tl">Top-Left</button>
+                <button class="tc">Top-Center</button>
+                <button class="tr">Top-Right</button>
+                <br>
+                <button class="ml">Mid-Left</button>
+                <button class="mc">Center</button>
+                <button class="mr">Mid-Right</button>
+                <br>
+                <button class="bl">Bottom-Left</button>
+                <button class="bc">Bottom-Center</button>
+                <button class="br">Bottom-Right</button>
+            </div>
+        </div>
+    </div>
+    <div class="preview">
+        <div class="preview-box">
+            <div id="customnot"></div>
+        </div>
+    </div>
+    <script>
+        var previewBox = document.querySelector('.preview-box');
+        var customNot = document.querySelector('#customnot');
+
+        var posTl = document.querySelector('.tl');
+        var posTc = document.querySelector('.tc');
+        var posTr = document.querySelector('.tr');
+
+        var posMl = document.querySelector('.ml');
+        var posMc = document.querySelector('.mc');
+        var posMr = document.querySelector('.mr');
+
+        var posBl = document.querySelector('.bl');
+        var posBc = document.querySelector('.bc');
+        var posBr = document.querySelector('.br');
+        
+        function fetchData(){
+            var heightValue = document.forms["subForm"]["height"].value;
+            var widthValue = document.forms["subForm"]["width"].value;
+            var marginValue = document.forms["subForm"]["margin"].value;
+            customNot.style.height = heightValue;
+            customNot.style.width = widthValue;
+            customNot.style.margin = marginValue;
+            setTimeout("fetchData()", 10); // after 1 secs
+        }
+
+        setTimeout("fetchData()", 10); // after 1 secs
+
+        // Position related javascript
+
+        // Postion-top
+        posTl.onclick = function(){
+            previewBox.style.alignItems = 'flex-start';
+            previewBox.style.justifyContent = 'flex-start';
+        }
+        posTc.onclick = function(){
+            previewBox.style.alignItems = 'flex-start';
+            previewBox.style.justifyContent = 'center';
+        }
+        posTr.onclick = function(){
+            previewBox.style.alignItems = 'flex-start';
+            previewBox.style.justifyContent = 'flex-end';
+        }
+
+        // Postion-center
+        posMl.onclick = function(){
+            previewBox.style.alignItems = 'center';
+            previewBox.style.justifyContent = 'flex-start';
+        }
+        posMc.onclick = function(){
+            previewBox.style.alignItems = 'center';
+            previewBox.style.justifyContent = 'center';
+        }
+        posMr.onclick = function(){
+            previewBox.style.alignItems = 'center';
+            previewBox.style.justifyContent = 'flex-end';
+        }
+
+        // Postion-bottom
+        posBl.onclick = function(){
+            previewBox.style.alignItems = 'flex-end';
+            previewBox.style.justifyContent = 'flex-start';
+        }
+        posBc.onclick = function(){
+            previewBox.style.alignItems = 'flex-end';
+            previewBox.style.justifyContent = 'center';
+        }
+        posBr.onclick = function(){
+            previewBox.style.alignItems = 'flex-end';
+            previewBox.style.justifyContent = 'flex-end';
+        }
+    </script>
+</body>
+</html>

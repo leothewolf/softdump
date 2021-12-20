@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="sidebars">
+            <i class='bx bx-menu'></i>
+        </div>
+        <div class="sidebarsc">
+            <div class="cn">Company</div><i class='bx bx-x' id="sidebarsc1"></i>
+        </div>
+        <div class="col">
+            <span><i class='bx bxs-dashboard'></i></span>
+            <span><i class='bx bx-message-rounded'></i></span>
+            <span><i class='bx bx-tachometer' ></i></span>
+            <span><i class='bx bx-store'></i></span>
+            <span><i class='bx bx-cog'></i></span>
+        </div>
+        <div class="col1">
+            <span><i class='bx bxs-dashboard'></i> Dashboard</span>
+            <span><i class='bx bx-message-rounded'></i> Messages</span>
+            <span><i class='bx bx-tachometer' ></i> Analytics</span>
+            <span><i class='bx bx-store'></i> Store</span>
+            <span><i class='bx bx-cog'></i> Settings</span>
+        </div>
+    </div>
+
+    <div class="mobnav">
+        <div class="mobnavm">
+            <div class="cn">Company Name</div><i class='bx bx-menu' id="mobo"></i>
+        </div>
+        <div class="mobnavmex">
+            <div class="mobclose">
+                <i class='bx bx-x' id="mobc"></i>
+            </div>
+            <span><i class='bx bxs-dashboard'></i> Dashboard</span>
+            <span><i class='bx bx-message-rounded'></i> Messages</span>
+            <span><i class='bx bx-tachometer' ></i> Analytics</span>
+            <span><i class='bx bx-store'></i> Store</span>
+            <span><i class='bx bx-cog'></i> Settings</span>
+        </div>
+    </div>
+    <script>
+        var sideBar = document.querySelector('.sidebar');
+        var sideBars = document.querySelector('.sidebars');
+        var col = document.querySelector('.col');
+        var col1 = document.querySelector('.col1');
+        var sideBarsc = document.querySelector('.sidebarsc');
+        var sideBarsc1 = document.querySelector('#sidebarsc1');
+        var mobO = document.querySelector('#mobo');
+        var mobC = document.querySelector('#mobc');
+        var mobnavmEx = document.querySelector('.mobnavmex');
+
+
+        sideBars.onclick = function (){
+            if(sideBar.classList.contains('active')){
+                sideBar.classList.remove('active');
+                col.style.display = 'flex';
+                col1.style.display = 'none';
+            }else{
+                sideBar.classList.add('active'); 
+                col.style.display = 'none';
+                col1.style.display = 'flex';
+            }
+            sideBars.style.display = 'none';
+            sideBarsc.style.display = 'flex';
+        }
+        sideBarsc1.onclick = function(){
+            sideBars.style.display = 'flex';
+            sideBarsc.style.display = 'none';
+            sideBar.classList.remove('active');
+            col.style.display = 'flex';
+            col1.style.display = 'none';
+        }
+        mobO.onclick = function (){
+            mobnavmEx.style.display = 'flex'; 
+        }
+        mobC.onclick = function (){
+            mobnavmEx.style.display = 'none'; 
+        }
+    </script>
+</body>
+</html>

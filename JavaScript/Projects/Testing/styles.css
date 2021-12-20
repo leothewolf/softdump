@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Dosis", sans-serif;
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #333;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-top: 60px;
+}
+
+.editing {
+  height: 100%;
+  width: 70%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* .editing input[type="text"] {
+  height: 25px;
+  width: 100px;
+} */
+
+.preview {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 10px;
+  position: fixed;
+  border-left: 1px solid #333;
+  right: 0;
+  top: 60px;
+}
+
+.preview-box {
+  height: 50%;
+  width: 100%;
+  background: #efefef;
+  box-sizing: border-box;
+  display: flex;
+}
+
+#customnot {
+  background: white;
+  margin: 10px;
+}
+
+.posBtn button {
+  height: 30px;
+  width: 100px;
+  margin: 10px;
+}

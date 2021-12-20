@@ -1,0 +1,20 @@
+body {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  width: 40vw;
+  height: 40vh;
+  position: relative;
+  top: 29%;
+  left: 29.5%;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+}
+
+input[type="text"] {
+  text-align: center;
+}

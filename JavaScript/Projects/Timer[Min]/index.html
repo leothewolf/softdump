@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="timer"></div>
+    <script>
+        var min = 2;
+        var secm = 60;
+        var timerDiv = document.querySelector('.timer');
+
+        window.onload = function () {
+            timerDiv.innerHTML = '00:0' + min + ':00'; //add one more zero if sec less then 10  
+        }
+
+
+        function showIt2() {
+            if (min >= 0 && secm == 60){
+                min--;
+                secm--;
+                if(secm > 9){
+                    timerDiv.innerHTML = '00:0' + min + ':' + secm; 
+                }else if(secm <= 9){
+                    timerDiv.innerHTML = '00:0' + min + ':0' + secm;
+                } 
+            }else if (min >= 0 && secm != 0){
+                secm--;
+                if(secm > 9){
+                    timerDiv.innerHTML = '00:0' + min + ':' + secm; 
+                }else if(secm <= 9){
+                    timerDiv.innerHTML = '00:0' + min + ':0' + secm;
+                }
+            }
+            if (min != 0 && secm == 0){
+                secm = 60;
+            }
+            setTimeout("showIt2()", 1000); // after 1 secs
+        }
+        setTimeout("showIt2()", 1000); // after 1 secs
+    </script>
+</body>
+</html>

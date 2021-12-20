@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: wheat;
+}
+
+.first {
+  position: absolute;
+  height: 250px;
+  width: 200px;
+  overflow: hidden;
+  z-index: -1;
+}
+
+body {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  height: 250px;
+  width: 200px;
+  border: 1px solid white;
+  color: indianred;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+p {
+  width: 150px;
+  height: 100px;
+  background: none;
+  position: absolute;
+  text-align: center;
+  opacity: 0;
+  font-size: 0.7em;
+  /* top: 355px; */
+  top: 237px;
+  transition: ease-in 0.6s;
+}
+
+.main:hover {
+  border: 1px solid indianred;
+  box-shadow: 0 4px 8px 0 indianred, 0 6px 20px 0 indianred;
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  background: url("/img/Untitled-1.png");
+  border: 1px white solid;
+  border-radius: 10px;
+  transition: all 0.5s linear;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.main:hover > .box {
+  width: 100px;
+  height: 100px;
+  border: 1px solid indianred;
+  border-radius: 10px;
+  transform: translateY(-55px);
+  position: relative;
+  box-shadow: 0 2px 4px 0 indianred, 0 3px 10px 0 indianred;
+}
+
+.main:hover > p {
+  /* top: 237px; */
+  opacity: 1;
+}
+
+a {
+  font-size: 12px;
+  width: 90px;
+  height: 25px;
+  border-radius: 10px;
+  color: indianred;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 118px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-decoration: none;
+  opacity: 0;
+  transition: all 0.8s linear;
+}
+
+.main:hover > a {
+  opacity: 1;
+  box-shadow: 0 1px 2px 0 indianred, 0 1.5px 5px 0 indianred;
+}
+
+.spacing {
+  width: 20px;
+}
+
+.main:hover > #greenbox {
+  width: 100px;
+  height: 100px;
+  border: 1px solid green;
+  border-radius: 10px;
+  transform: translateY(-55px);
+  position: relative;
+  box-shadow: 0 1px 2px 0 green, 0 1.5px 5px 0 green;
+}
+
+#green:hover {
+  border: 1px solid green;
+  box-shadow: 0 1px 2px 0 green, 0 1.5px 5px 0 green;
+}
+
+.main:hover > #bluebox {
+  width: 100px;
+  height: 100px;
+  border: 1px solid cyan;
+  border-radius: 10px;
+  transform: translateY(-55px);
+  position: relative;
+  box-shadow: 0 1px 2px 0 cyan, 0 1.5px 5px 0 cyan;
+}
+
+#blue:hover {
+  border: 1px solid cyan;
+  box-shadow: 0 1px 2px 0 cyan, 0 1.5px 5px 0 cyan;
+}

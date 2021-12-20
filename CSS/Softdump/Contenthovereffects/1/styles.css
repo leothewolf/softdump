@@ -1,0 +1,59 @@
+.main {
+  /* margin: 100px; */
+  height: 125px;
+  width: 100px;
+  position: relative;
+  background: black;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subdiv {
+  background: #39ff14;
+  height: 100px;
+  width: 200px;
+  border: 1px solid black;
+  position: absolute;
+  box-sizing: border-box;
+  top: -100px;
+  left: -90px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.2s ease;
+  z-index: 999;
+}
+
+.main:hover > .subdiv {
+  height: 200px;
+  width: 200px;
+  opacity: 1;
+}
+
+.main:hover {
+  border: 2px solid black;
+}
+
+.square {
+  width: 50px;
+  height: 50px;
+  background-color: aqua;
+  position: absolute;
+  z-index: 1000;
+  opacity: 0;
+  box-shadow: 4px -1px 29px 0px rgba(0, 0, 0, 0.75);
+}
+
+.main:hover > .square {
+  opacity: 1;
+  animation: anim1 1s infinite;
+}
+
+@keyframes anim1 {
+  100% {
+    transform: rotateY(360deg);
+  }
+}

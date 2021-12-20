@@ -1,0 +1,125 @@
+Html
+
+==Img:
+--emmet tag : img
+→<img src="" alt="">
+•src = image source alt = alternate text
+•<img src="example.png" alt="abc.png">
+→<img src="Abc.jpg" width="1280" alt="Youtube.jpg">
+•Just determine width height will be defined by itself
+
+==Comments
+→ emmet tags : <!--
+               ctrl + forward slash(/)
+
+==Break Command
+→Just the tag <br>   
+
+==Hyperlink
+--emmet tag : a
+→<a href="https://www.youtube.com/">Hello</a>
+Hperlink to open in new tab target="_blank"
+
+==Adding Image To Title
+
+→Image should be in .ico format 
+→Href can be changed here to image location. Eg: /abc.ico
+
+Example: <html lang="en">
+<head>
+    <title>Top Sites</title>
+    <link rel="shortcut icon" href="https://researchforevidence.fhi360.org/wp-content/uploads/2017/01/favicon.ico" type="image/x-icon">
+</head>
+
+==Paragraph Formatting
+--For subscript : <sub></sub>
+--For superscript : <sup></sup>
+--For Bold : <strong></strong>
+--For Italics/emphasis : <em></em>
+--For Inputing Special Characters : &symbolcode;
+                               Eg : &copy; (For Copyright Symbol)
+
+
+==Lists
+
+===Unordered Lists (Marking using •) <ul></ul>---To start/end unordered list
+                                     <li></li>---For List Elements
+
+===Ordered Lists (Marking using 1,2,3...) <ol></ol>---To start/end Ordered list
+                                          <li></li>---For List Elements
+
+==Tables
+-Explain With Example : <table>---For starting new table
+                            <tr>---New Row(For different rows different <tr>)
+                                <td>Hello</td>---Row elements(Coloumn Elements)(For different coloumns different <td>)
+                            </tr>---For Ending Row
+                        </table>---For ending table
+=For Table Heading <th></th>(Row)
+
+==Data Collection(Input In HTML)(Formspree)
+-Explain With Example : <form action="" method="">---Creating Form For Data Input
+                                <label for="name">First Name</label>---Giving Label Name To Input
+                                <input type="text" name="name" id="">---Creating Input (Type:Text)
+                                <button type="submit">Submit</button>---Creating Button
+                        </form>
+=<placeholder="name">---For displaying when no input
+=<value="">---For automatic display of text when no input
+           ---For return of value when data sumbited using radiobuttons or checkboxes
+
+=Textarea input type [For input of short paragraphs]
+ emmet : textarea 
+
+=Dropdown Menu
+-Explain With Example : <select name="languages" id="languages">---For creating dropdown menu use <select></select>
+                              <option value="1">Java</option>---<option></option> for options , <value=""> for return value when option selected
+                              <option value="2">Javascript</option>
+                        </select>
+                        <button type="submit">Submit</button>---Creating sumbit button
+
+=Radio Button Input
+-Explain With Example : <input type="radio" name="languages" id="">Java
+                        <br>
+                        <input type="radio" name="languages" id="">Javascript
+---Creating input type radio , then stating name for the group of radio buttons , then after complete of brackets > input display name
+
+==<arbb></arbb>--for attributes
+
+==<q></q>--for quotation
+
+==<a href="mailto:example@example.com">--email link---add to add subject : 
+  ?subject=hello
+
+==<marquee><marquee>--moving text(older syntax--working in html5--not supported anymore) --- direction attribute can be used to change direction example:direction:"right"
+
+==Description list:
+<dl>
+        <dt>
+                <dd></dd>
+         </dt>
+</dl>
+
+==To show another website:(iframe) 
+  Example: <iframe src=""><\iframe>
+
+==For audio:
+<audio controls>
+             <source src="" type="audio/mpeg">
+</audio>
+
+==For video:
+<video controls>
+             <source src="" type="video/">
+</video>
+--If we want no controls we should include autoplay so it plays or it will be paused and won't play
+
+==For embedding pdf:
+We can use embed, iframe or object syntax just specify src and file type
+
+For multiple hyperlinks within an image:Image mapping
+
+==Scroll html effect(hyperlink id scroll)
+==html {
+    scroll-behavior: smooth;
+   }
+
+==Line partition <hr>

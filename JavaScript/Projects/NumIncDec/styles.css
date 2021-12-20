@@ -1,0 +1,33 @@
+body {
+  background: #eeeeee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn button {
+  height: 30px;
+  width: 100px;
+  border: none;
+}
+
+.dec {
+  background: rgb(241, 49, 49);
+  color: white;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.inc {
+  background: rgb(43, 236, 75);
+  color: white;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.reset {
+  background: rgb(44, 41, 41);
+  color: white;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}

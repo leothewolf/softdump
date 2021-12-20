@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<?php
+
+$deposit=1000;
+
+for ($x=1; $x <= 60; $x++){
+    $intrest=($deposit*0.5)/100;
+    $deposit+=$intrest;
+    echo $x." Month:".number_format($deposit);
+    echo "<br>";
+}
+
+
+?>
+</body>
+</html>

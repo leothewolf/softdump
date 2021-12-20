@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="mainbody">
+      <div class="container">
+        <div class="blueBg">
+          <div class="box signin">
+            <h2>Already have an account?</h2>
+            <button class="signinBtn">Sign in</button>
+          </div>
+          <div class="box signup">
+            <h2>Don't have an account?</h2>
+            <button class="signupBtn">Sign up</button>
+          </div>
+        </div>
+        <div class="formBx">
+          <div class="form signinForm">
+            <form action="">
+              <h3>Sign In</h3>
+              <input type="text" placeholder="Username" />
+              <input type="password" placeholder="Password" />
+              <input type="submit" value="Sign In" />
+              <a href="#">Forgot Password?</a>
+            </form>
+          </div>
+
+          <div class="form signupForm">
+            <form action="">
+              <h3>Sign Up</h3>
+              <input type="text" placeholder="Username" />
+              <input type="text" placeholder="Email" />
+              <input type="password" placeholder="Password" />
+              <input type="password" placeholder="Confirm Password" />
+              <input type="submit" value="Register" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const signinBtn = document.querySelector(".signinBtn");
+      const signupBtn = document.querySelector(".signupBtn");
+      const formBx = document.querySelector(".formBx");
+      const mainbody = document.querySelector(".mainbody");
+
+      signupBtn.onclick = function () {
+        formBx.classList.add("active");
+        mainbody.classList.add("active");
+      };
+
+      signinBtn.onclick = function () {
+        formBx.classList.remove("active");
+        mainbody.classList.remove("active");
+      };
+    </script>
+  </body>
+</html>

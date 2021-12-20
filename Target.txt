@@ -1,0 +1,12 @@
+Frontend development:>>HTML
+                     >>CSS
+                     >>Javascript
+                     >>Typescript[Java script based superset developed by miscrosoft]
+                     >>MEAN[Based on javascript]
+Backend Development:>>PHP
+                    >>JAVA
+                    >>Python
+
+
+Textarea with all features: quill>> https://quilljs.com/docs/quickstart/
+					
